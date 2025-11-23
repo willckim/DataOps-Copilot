@@ -36,9 +36,9 @@ class Settings(BaseSettings):
     AZURE_API_VERSION: str = "2024-02-15-preview"
     
     # Model Configurations
-    DEFAULT_MODEL: str = "claude-sonnet-4-20250514"
-    FALLBACK_MODEL: str = "gpt-4o"
-    VISION_MODEL: str = "gemini-1.5-pro"
+    DEFAULT_MODEL: str = "claude-sonnet-4-20250514"  # Claude Sonnet 4.5
+    FALLBACK_MODEL: str = "gpt-5-mini"  # GPT-5 mini (latest!)
+    VISION_MODEL: str = "gemini-2.0-flash-exp"  # Gemini 2.0 Flash (newest!)
     
     # LiteLLM Settings
     LITELLM_DROP_PARAMS: bool = True
@@ -56,7 +56,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = True
-        extra = "ignore"
+        extra = "ignore"  # Allow extra fields in .env file
 
 
 @lru_cache()

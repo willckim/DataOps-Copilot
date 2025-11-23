@@ -30,7 +30,7 @@ export default function Home() {
             AI-Powered DataOps Platform
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Upload messy data, get instant insights. Powered by Claude, GPT-4, and Gemini 
+            Upload messy data, get instant insights. Powered by Claude Sonnet 4.5, GPT-5 mini, and Gemini 2.0 Flash 
             with intelligent multi-model routing for enterprise-grade analytics.
           </p>
           <div className="flex justify-center space-x-4">
@@ -90,23 +90,27 @@ export default function Home() {
 
         {/* Tech Stack */}
         <div className="mt-20 card">
-          <h2 className="text-2xl font-bold text-center mb-8">Powered By</h2>
+          <h2 className="text-2xl font-bold text-center mb-8">Powered By Latest AI Models</h2>
           <div className="flex justify-center items-center space-x-12 flex-wrap">
             <div className="text-center">
               <div className="text-4xl mb-2">🤖</div>
               <p className="font-semibold">Claude Sonnet 4.5</p>
+              <p className="text-xs text-gray-500">Complex Reasoning</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">⚡</div>
-              <p className="font-semibold">GPT-4o</p>
+              <p className="font-semibold">GPT-5 mini</p>
+              <p className="text-xs text-gray-500">Latest & Fastest</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">✨</div>
-              <p className="font-semibold">Gemini 1.5 Pro</p>
+              <p className="font-semibold">Gemini 2.0 Flash</p>
+              <p className="text-xs text-gray-500">FREE Preview</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">🔵</div>
-              <p className="font-semibold">Azure OpenAI</p>
+              <p className="font-semibold">Azure GPT-4o-mini</p>
+              <p className="text-xs text-gray-500">Enterprise Ready</p>
             </div>
           </div>
         </div>

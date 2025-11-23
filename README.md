@@ -2,7 +2,9 @@
 
 **Enterprise AI-Powered DataOps Platform with Multi-Model Routing**
 
-An intelligent data operations platform that automatically profiles, cleans, and analyzes data using Claude, GPT-4, Gemini, and Azure OpenAI with smart model routing.
+An intelligent data operations platform that automatically profiles, cleans, and analyzes data using Claude Sonnet 4.5, GPT-5 mini, Gemini 2.0 Flash, and Azure GPT-4o-mini with smart model routing.
+
+**🌐 [LIVE DEMO](https://your-app-url.vercel.app)** | **📚 [Documentation](#)** | **💼 [Portfolio](#)**
 
 ![DataOps Copilot](https://img.shields.io/badge/Status-Production%20Ready-green)
 ![License](https://img.shields.io/badge/License-MIT-blue)
@@ -15,9 +17,9 @@ An intelligent data operations platform that automatically profiles, cleans, and
 
 ### 🤖 Multi-Model AI Routing
 - **Claude Sonnet 4.5** for complex reasoning and data analysis
-- **GPT-4o** for fast structured outputs and code generation
-- **Gemini 1.5 Pro** for vision-based dashboard OCR (FREE tier!)
-- **Azure OpenAI** for enterprise compliance
+- **GPT-5 mini** for fast structured outputs (latest OpenAI!)
+- **Gemini 2.0 Flash** for vision and multimodal tasks (FREE!)
+- **Azure GPT-4o-mini** for enterprise compliance
 - Automatic fallback routing with LiteLLM
 
 ### 📊 Core Capabilities
@@ -220,8 +222,9 @@ npm test
 
 ### AI Models
 - **Claude Sonnet 4.5** - Complex reasoning ($3/$15 per 1M tokens)
-- **GPT-4o** - Fast structured output ($2.5/$10 per 1M tokens)
-- **Gemini 1.5 Pro** - Vision + FREE tier! ($1.25/$5 per 1M tokens)
+- **GPT-5 mini** - Latest OpenAI model ($0.15/$0.60 per 1M tokens - estimated)
+- **Gemini 2.0 Flash** - FREE during preview! ($0/$0 per 1M tokens)
+- **Azure GPT-4o-mini** - Enterprise option ($0.165/$0.66 per 1M tokens)
 
 ---
 
@@ -273,18 +276,20 @@ NEXT_PUBLIC_API_URL=https://your-railway-backend.up.railway.app
 ## 💰 Cost Breakdown
 
 ### Development (Testing)
-- **LLM APIs**: ~$5-10/month (with smart caching)
+- **LLM APIs**: ~$1-3/month (Gemini 2.0 Flash is FREE!)
 - **Hosting**: $0 (free tiers)
-- **Total**: ~$5-10/month
+- **Total**: ~$1-3/month
 
 ### Production (Active Use)
-- **LLM APIs**: ~$15-30/month
+- **LLM APIs**: ~$5-10/month (mostly using free/cheap models)
 - **Railway**: $5/month (500 hrs)
 - **Database**: $0 (Supabase free tier)
-- **Total**: ~$20-35/month
+- **Total**: ~$10-15/month
 
 **Cost Optimization:**
-- Use Gemini for vision (FREE 1500 requests/day)
+- Use Gemini 2.0 Flash for most tasks (FREE!)
+- Use GPT-5 mini for fast structured outputs (latest OpenAI!)
+- Reserve Claude for complex reasoning only
 - Enable prompt caching
 - Use DuckDB for in-memory analytics (free)
 

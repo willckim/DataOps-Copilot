@@ -39,25 +39,25 @@ class LLMRouter:
         """Configure model routing preferences"""
         self.model_map = {
             # Primary models
-            "claude": "claude-sonnet-4-20250514",
-            "gpt4": "gpt-4o",
-            "gemini": "gemini-1.5-pro",
-            "azure": "azure/gpt-4o",
+            "claude": "claude-sonnet-4-20250514",  # Claude Sonnet 4.5
+            "gpt5": "gpt-5-mini",  # GPT-5 mini (latest!)
+            "gemini": "gemini-2.0-flash-exp",  # Gemini 2.0 Flash
+            "azure": "azure/gpt-4o-mini",  # Azure GPT-4o-mini
             
             # Task-specific routing
             "reasoning": "claude-sonnet-4-20250514",
-            "speed": "gpt-4o",
-            "vision": "gemini-1.5-pro",
-            "structured": "gpt-4o",
+            "speed": "gpt-5-mini",
+            "vision": "gemini-2.0-flash-exp",
+            "structured": "gpt-5-mini",
         }
         
         self.task_routing = {
-            "data_profiling": ["claude", "gpt4"],
-            "sql_generation": ["claude", "gpt4"],
-            "vision_ocr": ["gemini", "gpt4"],
-            "code_generation": ["gpt4", "claude"],
-            "complex_reasoning": ["claude", "gpt4"],
-            "simple_query": ["gpt4", "claude"],
+            "data_profiling": ["claude", "gpt5"],
+            "sql_generation": ["claude", "gpt5"],
+            "vision_ocr": ["gemini", "gpt5"],
+            "code_generation": ["gpt5", "claude"],
+            "complex_reasoning": ["claude", "gpt5"],
+            "simple_query": ["gpt5", "claude"],
         }
     
     async def complete(
@@ -220,11 +220,12 @@ class LLMRouter:
         Returns:
             Estimated cost in USD
         """
-        # Pricing per 1M tokens (as of Jan 2025)
+        # Pricing per 1M tokens (as of November 2025)
         pricing = {
-            "claude-sonnet-4-20250514": {"input": 3.0, "output": 15.0},
-            "gpt-4o": {"input": 2.5, "output": 10.0},
-            "gemini-1.5-pro": {"input": 1.25, "output": 5.0},
+            "claude-sonnet-4-20250514": {"input": 3.0, "output": 15.0},  # Claude Sonnet 4.5
+            "gpt-5-mini": {"input": 0.15, "output": 0.60},  # GPT-5 mini (estimate - check OpenAI for actual)
+            "gemini-2.0-flash-exp": {"input": 0.0, "output": 0.0},  # Gemini 2.0 Flash (FREE!)
+            "azure/gpt-4o-mini": {"input": 0.165, "output": 0.66},  # Azure GPT-4o-mini
         }
         
         if model in pricing:
