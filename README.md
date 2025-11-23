@@ -335,10 +335,10 @@ MIT License - feel free to use this for your portfolio or commercial projects!
 
 ## 👨‍💼 Built By
 
-**Your Name** - Analytics Engineer | AI Engineer  
+**William Kim** - AI Engineer  
 - 🔗 [LinkedIn](#)
 - 🐙 [GitHub](#)
-- 📧 your.email@example.com
+- 📧 williamcjk11@gmail.com
 
 ---
 
