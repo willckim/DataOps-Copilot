@@ -18,11 +18,12 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: list = [
         "http://localhost:3000",
         "http://localhost:3001",
+        "https://www.dataopscopilot.com",
         "https://dataops-copilot.vercel.app"
     ]
     
     # Database
-    DATABASE_URL: str = "postgresql://user:password@localhost:5432/dataops"
+    DATABASE_URL: str = "postgresql://dataops_postgres_user:2h41a5HgDWJECmnWvUv0ya2K4N0XyN7Q@dpg-d4hlsvkhg0os738heq90-a/dataops_postgres"
     
     # Redis
     REDIS_URL: str = "redis://localhost:6379/0"
@@ -36,7 +37,7 @@ class Settings(BaseSettings):
     AZURE_API_VERSION: str = "2024-02-15-preview"
     
     # Model Configurations
-    DEFAULT_MODEL: str = "claude-sonnet-4-20250514"  # Claude Sonnet 4.5
+    DEFAULT_MODEL: str = "claude-sonnet-4-5-20250929"  # Claude Sonnet 4.5
     FALLBACK_MODEL: str = "gpt-5-mini"  # GPT-5 mini (latest!)
     VISION_MODEL: str = "gemini-2.0-flash-exp"  # Gemini 2.0 Flash (newest!)
     

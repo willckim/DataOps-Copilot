@@ -222,7 +222,7 @@ class LLMRouter:
         """
         # Pricing per 1M tokens (as of November 2025)
         pricing = {
-            "claude-sonnet-4-20250514": {"input": 3.0, "output": 15.0},  # Claude Sonnet 4.5
+            "claude-sonnet-4-5-20250929": {"input": 3.0, "output": 15.0},  # Claude Sonnet 4.5
             "gpt-5-mini": {"input": 0.15, "output": 0.60},  # GPT-5 mini (estimate - check OpenAI for actual)
             "gemini-2.0-flash-exp": {"input": 0.0, "output": 0.0},  # Gemini 2.0 Flash (FREE!)
             "azure/gpt-4o-mini": {"input": 0.165, "output": 0.66},  # Azure GPT-4o-mini
