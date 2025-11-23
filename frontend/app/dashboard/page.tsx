@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { useMutation } from '@tanstack/react-query'
 import { Upload, Database, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
-import { uploadAndProfile, ProfileResponse } from '@/lib/api'
-import FileUpload from '@/components/features/FileUpload'
-import ProfileResults from '@/components/features/ProfileResults'
+import { uploadAndProfile, ProfileResponse } from '../../lib/api'
+import FileUpload from '../../components/features/FileUpload'
+import ProfileResults from '../../components/features/ProfileResults'
 
 export default function Dashboard() {
   const [profileResult, setProfileResult] = useState<ProfileResponse | null>(null)
