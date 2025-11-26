@@ -41,13 +41,13 @@ class LLMRouter:
             # Primary models
             "claude": "claude-sonnet-4-20250514",  # Claude Sonnet 4.5
             "gpt5": "gpt-5-mini",  # GPT-5 mini (latest!)
-            "gemini": "gemini-2.0-flash-exp",  # Gemini 2.0 Flash
+            "gemini": "gemini-2.5-pro",  # Gemini 2.0 Flash
             "azure": "azure/gpt-4o-mini",  # Azure GPT-4o-mini
             
             # Task-specific routing
             "reasoning": "claude-sonnet-4-20250514",
             "speed": "gpt-4o-mini",
-            "vision": "gemini-2.0-flash-exp",
+            "vision": "gemini-2.5-pro",
             "structured": "gpt-4o-mini",
         }
         

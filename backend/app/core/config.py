@@ -39,7 +39,7 @@ class Settings(BaseSettings):
     # Model Configurations
     DEFAULT_MODEL: str = "claude-sonnet-4-5-20250929"  # Claude Sonnet 4.5
     FALLBACK_MODEL: str = "gpt-4o-mini"  # GPT-5 mini (latest!)
-    VISION_MODEL: str = "gemini-1.5-pro"  # Gemini 2.0 Flash (newest!)
+    VISION_MODEL: str = "gemini-2.5-pro"  # Gemini 2.0 Flash (newest!)
     
     # LiteLLM Settings
     LITELLM_DROP_PARAMS: bool = True
