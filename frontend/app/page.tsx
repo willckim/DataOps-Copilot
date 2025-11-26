@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <h3 className="text-lg font-semibold mb-2">Multi-Model Routing</h3>
             <p className="text-gray-600">
-              Intelligent routing across Claude, GPT-4, and Gemini
+              Intelligent routing across Claude, GPT-5, and Gemini
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">✨</div>
-              <p className="font-semibold">Gemini 2.0 Flash</p>
+              <p className="font-semibold">Gemini 1.5 Flash</p>
               <p className="text-xs text-gray-500">FREE Preview</p>
             </div>
             <div className="text-center">
