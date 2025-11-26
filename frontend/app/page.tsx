@@ -30,7 +30,7 @@ export default function Home() {
             AI-Powered DataOps Platform
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Upload messy data, get instant insights. Powered by Claude Sonnet 4.5, GPT-5 mini, and Gemini 2.0 Flash 
+            Upload messy data, get instant insights. Powered by Claude Sonnet 4.5, GPT-4 mini, and Gemini 1.5 Pro 
             with intelligent multi-model routing for enterprise-grade analytics.
           </p>
           <div className="flex justify-center space-x-4">
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <h3 className="text-lg font-semibold mb-2">Multi-Model Routing</h3>
             <p className="text-gray-600">
-              Intelligent routing across Claude, GPT-5, and Gemini
+              Intelligent routing across Claude, GPT-4, and Gemini
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">⚡</div>
-              <p className="font-semibold">GPT-5 mini</p>
+              <p className="font-semibold">GPT-4o-mini</p>
               <p className="text-xs text-gray-500">Latest & Fastest</p>
             </div>
             <div className="text-center">

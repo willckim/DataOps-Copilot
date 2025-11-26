@@ -46,18 +46,18 @@ class LLMRouter:
             
             # Task-specific routing
             "reasoning": "claude-sonnet-4-20250514",
-            "speed": "gpt-5-mini",
+            "speed": "gpt-4o-mini",
             "vision": "gemini-2.0-flash-exp",
-            "structured": "gpt-5-mini",
+            "structured": "gpt-4o-mini",
         }
         
         self.task_routing = {
-            "data_profiling": ["claude", "gpt5"],
-            "sql_generation": ["claude", "gpt5"],
-            "vision_ocr": ["gemini", "gpt5"],
-            "code_generation": ["gpt5", "claude"],
-            "complex_reasoning": ["claude", "gpt5"],
-            "simple_query": ["gpt5", "claude"],
+            "data_profiling": ["claude", "gpt4"],
+            "sql_generation": ["claude", "gpt4"],
+            "vision_ocr": ["gemini", "gpt4"],
+            "code_generation": ["gpt4", "claude"],
+            "complex_reasoning": ["claude", "gpt4"],
+            "simple_query": ["gpt4", "claude"]
         }
     
     async def complete(
@@ -223,7 +223,7 @@ class LLMRouter:
         # Pricing per 1M tokens (as of November 2025)
         pricing = {
             "claude-sonnet-4-5-20250929": {"input": 3.0, "output": 15.0},  # Claude Sonnet 4.5
-            "gpt-5-mini": {"input": 0.15, "output": 0.60},  # GPT-5 mini (estimate - check OpenAI for actual)
+            "gpt-4o-mini": {"input": 0.15, "output": 0.60},
             "gemini-1.5-pro": {"input": 0.0, "output": 0.0},  # Gemini 2.0 Flash (FREE!)
             "azure/gpt-4o-mini": {"input": 0.165, "output": 0.66},  # Azure GPT-4o-mini
         }
